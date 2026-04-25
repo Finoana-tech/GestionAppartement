@@ -1,0 +1,123 @@
+/* auth.css */
+
+/* Wrapper plein écran avec fond en dégradé violet */
+.auth-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Carte blanche avec ombre douce et arrondie */
+.auth-wrapper .card {
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  padding: 2rem 2.5rem;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Survol de la carte */
+.auth-wrapper .card:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Titre principal centré */
+.auth-wrapper h2 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #333333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+/* Champs du formulaire stylés */
+.auth-wrapper .form-control {
+  border-radius: 8px;
+  border: 1.5px solid #ddd;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+/* Focus sur les champs */
+.auth-wrapper .form-control:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 8px rgba(102, 126, 234, 0.4);
+}
+
+/* Boutons Bootstrap personnalisés */
+.auth-wrapper .btn-primary {
+  background-color: #667eea;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 0.65rem 0;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+/* Hover sur bouton */
+.auth-wrapper .btn-primary:hover,
+.auth-wrapper .btn-primary:focus {
+  background-color: #5563c1;
+  box-shadow: 0 0 12px rgba(85, 99, 193, 0.6);
+}
+
+/* Liens colorés et cliquables */
+.auth-wrapper .link-primary {
+  color: #667eea;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.auth-wrapper .link-primary:hover {
+  color: #5563c1;
+  text-decoration: underline;
+}
+
+/* Texte secondaire pour mot de passe oublié */
+.auth-wrapper .link-secondary {
+  color: #999999;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.auth-wrapper .link-secondary:hover {
+  color: #666666;
+  text-decoration: underline;
+}
+
+/* Messages d’erreur */
+.auth-wrapper .text-danger {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: -0.75rem;
+  margin-bottom: 1rem;
+  color: #d9534f;
+}
+
+/* Responsive pour mobile */
+@media (max-width: 480px) {
+  .auth-wrapper .card {
+    padding: 1.5rem 1.5rem;
+    max-width: 320px;
+  }
+
+  .auth-wrapper h2 {
+    font-size: 1.5rem;
+  }
+
+  .auth-wrapper .btn-primary {
+    font-size: 1rem;
+  }
+}
